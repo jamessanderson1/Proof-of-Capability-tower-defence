@@ -82,12 +82,14 @@ function draw() {
   }
   fill(230, 161, 14);
   square(205, 205, 40)
+  fill(0,0,0)
+  rect(200,215,30,20)
   for (let i = 0; i < Enemies.length; i++) {
     if (Distance(Enemies[i])) {
       Enemies.splice(i, 1);
-      fill(0,0,0)
-      for (i = 0 ; i < 100 ; i++){
-        circle(220 - i,220,5)
+      fill(255, 165, 0)
+      for (i = 0 ; i < 75 ; i++){
+        circle(220 - i,225,5)
       }
     }
   }
